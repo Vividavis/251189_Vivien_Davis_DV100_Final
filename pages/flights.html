@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewpoint" content="width-device=width,initial-scale=1.0">
+        <meta name="author" content="Vivien Davis 251189">
+        <title>Red Planet Ventures</title>
+        
+        <!--CSS-->
+        <link rel="stylesheet" href="../css/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://fonts.cdnfonts.com/css/porter-sans-block" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <script src="https://kit.fontawesome.com/898ab899ed.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="popUpContainer" id="popUpContainer">
+                <div class="popUp">
+                  <h1>Added To Cart</h1>
+                  <button type = "button" class="btn btn-danger" id="close">Close</button>
+                </div>
+            </div>
+
+            <nav class="topnav">
+                <img src="../assets/Images/logo.png" style="width: 20%;">
+                <div class="nav-pages">
+                    
+                    <div class="topnav">
+                        <ul>
+                            <a class="active" href="../index.html">Home</a>
+                        <a href="./flights.html">Flights</a>
+                        <a href="./contact.html">Contact</a>
+                        <a href="./about_us.html">About Us</a>
+                          <div class="search-container">
+                      
+                
+                              <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search " name="Se4arcg">
+                              <button <i class="fa-solid fa-magnifying-glass"></i></button>
+
+<ul id="myUL">
+  <li><a href="#mars">The Classic Mars Experience</a></li>
+  <li><a href="#neptune">Neptune’s Cosmic</a></li>
+
+  <li><a href="#giant">The Giant’s Journey</a></li>
+  <li><a href="#saturn">Ring Around a Saturn</a></li>
+
+  <li><a href="#uranus">Uranus Uncharted</a></li>
+  <li><a href="#moonlight">Moonlight Meander</a></li>
+
+</ul>
+                        <button <i class="fa-solid fa-basket-shopping" id="open-cart"></i>
+                            <button type="button"class="btn btn-danger" id="open">Submit</button>
+                             <button type = "button"  id="close">Close</button>
+                       
+    <button type = "button" id="close">Close</button>
+                        
+                    </div>
+                    </div>
+                  </div>
+            </nav>
+
+ 
+            <div class="text-flex"> 
+                <h1>Book A Flight</h1>
+            </div>
+            </section>
+        </header>
+
+        </section>
+
+
+ <div class="product">
+        <h2>The Classic Mars Experience</h2>
+        <p>R25,000.00</p>
+        <button onclick="addToCart('Product 2', 25000.00)">Add To Cart</button>
+    </div>
+<div class="product">
+        <h2>Neptune’s Cosmic</h2>
+        <p>R50,000.00</p>
+        <button onclick="addToCart('Product 2', 50000.00)">Add To Cart</button>
+    </div>
+<div class="product">
+        <h2>The Giant’s Journey</h2>
+        <p>R65,000.00</p>
+        <button onclick="addToCart('Product 2', 65000.00)">Add To Cart</button>
+    </div>
+
+<div class="product">
+        <h2>Ring Around a Saturn</h2>
+        <p>R40,000.00</p>
+        <button onclick="addToCart('Product 2', 40000.00)">Add To Cart</button>
+    </div>
+
+    <div class="product">
+        <h2>Uranus Uncharted</h2>
+        <p>R50,000.00</p>
+        <button onclick="addToCart('Product 2', 50000.00)">Add To Cart</button>
+    </div>
+
+     <div class="product">
+        <h2>Moonlight Meander</h2>
+        <p>R15,000.00</p>
+        <button onclick="addToCart('Product 2', 15000.00)">Add To Cart</button>
+    </div>
+
+
+    <h2>Total</h2>
+    <ul id="cart"></ul>
+
+
+        <!--mars-->
+        <section id="mars" class="p-5">
+                <div class="row alignitems-center justify-content-between">
+                    <div class="col-md">
+                        <img src="/assets/Images/flighhtMars.png" class="img-fluid">
+                    </div>
+                    <div class="col-md p-5">
+                        <div class="product">
+                        <li><h2 id="mars"> The Classic Mars Experience</h2></a></li>
+                        <p class="lead">
+                            <p class="price">R25,000.00<span class="old-price">R50,000.00</span></p>
+                            <div class="rating">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <span>36 Reviews</span></div>
+                    <p class="description">
+                        Embark on a Mars vacation: red deserts, ancient relics, and towering 
+                        canyons await. Enjoy low-gravity hiking, rover trips to Olympus Mons, and 
+                        stargazing under Phobos and Deimos. Unforgettable adventures beckon 
+                        on the rust-colored landscapes of the Red Planet.
+                    </p>
+                    <div class="booking-controls">
+                        <input type="number" value="1" min="1">
+                        <a href="#" class="btn btn-danger my-3">
+                             <button type="button"class="btn btn-danger" id="open">Book Now</button>
+                       
+                        </a>
+                      
+                    </div>
+                    
+                        <ul class="info-list">
+                            <p>SKU:SS001</p>
+                            <p>Shuttle:The Opulence</p>
+                            <p>Tags:Mars,Luxury,Sale</p>
+                            <p>Date:16 June-19 July</p>
+                        </ul>
+                        </p>
+                        
+                    </div>
+                </div>
+
+                    </div>
+                </div>
+                </section>
+
+<!--neptune-->
+                <section class = "purpleBg" id="neptune" class="p-5">
+                    <div class="container">
+                        <div class="row alignitems-center justify-content-between">
+                            <div class="col-md">
+                                <img src="/assets/Images/flightNeptune.png" class="img-fluid">
+                            </div>
+                            <div class="col-md p-5">
+                               <li> <h2 id="neptune">Neptune’s Cosmic</h2></li>
+                                <p class="lead">
+                                    <p class="price">R50,000.00</p>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <span>24 Reviews</span></div>
+                            <p class="description">
+                                Embark on a voyage to Neptune aboard the "Neptune Voyager." Witness 
+                                surreal vistas of swirling clouds and rings. Experience weightlessness and 
+                                explore frigid oceans. Engage in thrilling spacewalks, observe celestial 
+                                phenomena, and savor gourmet space cuisine. An unforgettable 
+                                adventure awaits, blending luxury with cosmic exploration.
+                            </p>
+                            <div class="booking-controls">
+                                <input type="number" value="1" min="1">
+                                <a href="#" class="btn btn-danger my-3">
+                                    <button type="button"class="btn btn-danger" id="open">Book Now</button>
+                                </a>
+                              
+                            </div>
+                            
+                                <ul class="info-list">
+                                    <p>SKU:SS405</p>
+                                    <p>Shuttle: The Voyager</p>
+                                    <p>Tags: Neptune, Commercial, Gourmet Experience</p>
+                                    <p>Date:4 April - 28 March
+                                </ul>
+                                </p>
+                            </div>
+        
+                            </div>
+                        </div>
+                        </section>
+        
+<!--jupiter-->
+
+<section id="jupiter" class="p-5">
+    <div class="container-one">
+        <div class="row alignitems-center justify-content-between">
+            <div class="col-md">
+                <img src="/assets/Images/flightJupiter.png" class="fluid">  
+            </div>
+            <div class="col-md p-5">
+               <li> <h2 id="giant">The Giant’s Journey</h2></li>
+                <p class="lead">
+                    <p class="price">R65,000.00</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <span>48 Reviews</div>  
+            <p class="description">
+                Embark on a Jupiter voyage aboard the "Jupiter Odyssey." Witness its 
+    majestic storms and swirling atmosphere. Dive into metallic hydrogen 
+    oceans. Explore its moons, each a world unto itself. Engage in gravity 
+    surfing, comet chasing, and space excursions. Experience cosmic wonder 
+    in luxury, blending exploration with adventure.
+            </p>
+            <div class="booking-controls">
+                <input type="number" value="1" min="1">
+                <a href="#" class="btn btn-danger my-3">
+                    <button type="button"class="btn btn-danger" id="open">Book Now</button>
+                </a>
+              
+            </div>
+            
+                <ul class="info-list">
+                    <p>SKU:SS405</p>
+                    <p>Shuttle: The Voyager</p>
+                    <p>Tags: Neptune, Commercial, Gourmet Experience</p>
+                    <p>Date:4 April - 28 March</p>
+                </ul>
+                </p>
+            </div>
+
+            </div>
+        </div>
+        </section>
+
+<!--saturn-->
+<section class = "purpleBg" id="saturn" class="p-5">
+    <div class="container">
+        <div class="row alignitems-center justify-content-between">
+            <div class="col-md">
+                <img src="/assets/Images/flightSaturn.png" class="img-fluid">
+            </div>
+            <div class="col-md p-5">
+               <li> <h2 id="saturn"> Ring Around a Saturn</h2></li>
+                <p class="lead">
+                    <p class="price">R40,000.00</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <span></span>16 Reviews</div>
+            <p class="description">
+                Embark on a thrilling voyage to Saturn aboard the "Saturn Explorer." 
+Marvel at its iconic rings and turbulent storms. Explore its diverse moons, 
+from icy Enceladus to mysterious Titan, with activities including rover 
+expeditions and cave exploration. Experience the wonders of the cosmos 
+amidst luxurious accommodations, where the thrill of discovery 
+intertwines seamlessly with the excitement of adventure.
+            </p>
+            <div class="booking-controls">
+                <input type="number" value="1" min="1">
+                <a href="#" class="btn btn-danger my-3">
+                  <button type="button"class="btn btn-danger" id="open">Book Now</button>
+                </a>
+              
+            </div>
+            
+                <ul class="info-list">
+                    <p>SKU: SS333</p>
+                    <p>Shuttle:The Explorer</p>
+                    <p>Tags: Saturn, Luxury, Adventure</p>
+                    <p>Date: 4 April - 28 March</p>  
+                </ul>
+                </p>
+            </div>
+
+            </div>
+        </div>
+        </section>
+
+    <!--uranus-->   
+
+        <section id="uranus" class="p-5">
+            <div class="container-one">
+                <div class="row alignitems-center justify-content-between">
+                    <div class="col-md">
+                        <img src="/assets/Images/flightUranus.png" class="img-fluid">
+                    </div>
+                    <div class="col-md p-5">
+                        <li><h2 id="uranus">Uranus Uncharted</h2></li>
+                        <p class="lead">
+                            <p class="price">R50,000.00</p>
+                            <div class="rating">
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                <span>16 Reviews</span></div>
+                    <p class="description">
+                        Embark on a cosmic adventure to Uranus with our "Uranus Unveiled" tour. 
+                        Explore its icy atmosphere and captivating moons. Experience thrilling 
+                        zero-gravity excursions, witness mesmerizing auroras, and immerse 
+                        yourself in celestial photography workshops. With luxury 
+                        accommodations and expert guides, discover the wonders of Uranus in a 
+                        journey of a lifetime.
+                    </p>
+                    <div class="booking-controls">
+                        <input type="number" value="1" min="1">
+                        <a href="#" class="btn btn-danger my-3">
+                           <button type="button"class="btn btn-danger" id="open">Book Now</button>
+                        </a>
+                      
+                    </div>
+                    
+                        <ul class="info-list">
+                            <p>SKU: SS735</p>
+                            <p>Shuttle:The Endeavor</p>
+                            <p>Tags: Uranus, Workshop, Adventure</p>
+                            <p>Date: 16 May - 19 July</p>
+                        </ul>
+                        </p>
+                    </div>
+
+                    </div>
+                </div>
+                </section>
+
+<!--moon-->
+<section class = "purpleBg" id="moon" class="p-5">
+    <div class="container">
+        <div class="row alignitems-center justify-content-between">
+            <div class="col-md">
+                <img src="/assets/Images/flightMoon.png" class="img-fluid">
+            </div>
+            <div class="col-md p-5">
+               <li><h2 id="moonlight"> Moonlight Meander</h2></li>
+                <p class="lead">
+                    <p class="price">R15,000.00</p>
+                    <div class="rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <span></span>16 Reviews</div>
+            <p class="description">
+                Experience the ultimate lunar getaway with our "Moonlight Meander" 
+                package. Depart Earth's atmosphere aboard the "Celestial Cruiser" for a 
+                short but unforgettable journey to the Moon. Enjoy lunar walks, 
+                breathtaking views of Earthrise, and stargazing under the moon's serene 
+                glow. Immerse yourself in luxury accommodations amidst the tranquility 
+                of space.
+            </p>
+            <div class="booking-controls">
+                <input type="number" value="1" min="1">
+                <a href="#"class="btn btn-danger my-3">
+                    <button type="button"class="btn btn-danger" id="open">Book Now</button>
+                </a>
+              
+            </div>
+            
+                <ul class="info-list">
+                    <p>SKU:  SS451</p>
+                    <p>Shuttle: The Voyager</p>
+                    <p>Tags: Moon, Commercial, Romantic</p>
+                    <p>Date: 5 August - 12 August</p>  
+                </ul>
+                </p>
+            </div>
+
+            </div>
+        </div>
+        </section>
+        
+                </section>
+                <footer class="mt-auto">
+                    <div class="container-footer">
+                      <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <img src="../assets/Images/logo.png" style="width: 80%;">
+                            <div class="text-footer">
+                                Offering unforgettable trips to 
+                                explore planets in our solar 
+                                system.
+                                </div>
+                          <p></p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          <h3>Company</h3>
+                          <ul class="list-unstyled">
+                            <li><a href="../index.html" class="text-decoration-none text-black">Home</a></li>
+                            <li><a href="./flights.html" class="text-decoration-none text-black">Flights</a></li>
+                            <li><a href="./contact.html" class="text-decoration-none text-black">Contact</a></li>
+                            <li><a href="./about_us.html" class="text-decoration-none text-black">About us</a></li>
+                          </ul>
+                       
+                        </div>
+                        <div class="col-md-4 mb-3">
+                          
+                          <ul class="list-inline social-icons">
+                            <div class="links-imgs">
+                                <h2> Social Media Links</h2>
+                                <img src="/assets/Images/smInstagram.png"width="25%">
+                        
+                                <img src="/assets/Images/smX.png"width="25%">
+                        
+                                <img src="/assets/Images/smTicktock.png"width="25%">
+                                
+                                <img src="/assets/Images/smFacebook.png"width="25%">
+                            </div>
+                   
+                        <p&copy> All Rights Reserved @ Open Window 2024</p>
+                        <div class="terms-row">
+                        <p> Terms & Conditions</p>
+                    </div>
+                    <div class="policy-row">
+                        <p>Privacy & Policy
+                        </p>
+                    </div>
+                </footer>
+       
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"></script>
+        <footer>
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" 
+crossorigin="anonymous"></script>
+<script src="../js/script.js"></script>
+
+        </body>
+        </html>
